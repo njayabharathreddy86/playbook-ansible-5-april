@@ -1,0 +1,10 @@
+---
+- name: user creation in all nodes
+  hosts: all
+  become: yes
+  tasks:
+    - name: user creation jaya123
+      user:
+         name: jaya123
+         state: present
+
